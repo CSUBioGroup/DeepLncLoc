@@ -1,0 +1,1 @@
+The cache files are saved in this folder.
