@@ -36,7 +36,7 @@ s,f,k,d = 64,128,3,64
 model = TextClassifier_SPPCNN(classNum=5, embedding=dataClass.vector['embedding'], SPPSize=s, feaSize=d, filterNum=f, contextSizeList=[1,3,5], embDropout=0.3, fcDropout=0.5, useFocalLoss=True, device="cuda")
 model.cv_train(dataClass, trainSize=1, batchSize=16, stopRounds=200, earlyStop=10, epoch=100, kFold=5, savePath=f"out/DeepLncLoc_s{s}_f{f}_k{k}_d{d}", report=['ACC','MaF','MiAUC','MaAUC'])
 ```
-==Note that the model need to be named as "..._sx_fx_kx_dx" ('x' represents the parameters' value) , therefore we can get the model parameters from the name to  initialize the model architecture easily while in prediction.==
+==Note that the model need to be named as "..._sx_fx_kx_dx" ('x' represents the parameters' value) , therefore we can get the model parameters from the name toto better initialize the model architecture while in prediction.==
 ## How to do prediction
 First, import the package. 
 ```python
@@ -51,6 +51,11 @@ Finally, do the prediction.
 res = model.predict("ATCG...")
 print(res)
 ```
+## Independent test set
+The test_set.text in Independent_test_set folder is used in comparison with lncLocator and iLoc-lncRNA.
+
+## Other details
+The other details can see the paper and the codes.
 
 # Citation
 Min Zeng, Yifan Wu, Fuhao Zhang, Chengqian Lu, Fang-Xiang Wu, Jianxin Wang, Min Li. DeepLncLoc: predicting the subcellular localization of long non-coding RNAs by using deep learning techniques based on subsequence embedding
