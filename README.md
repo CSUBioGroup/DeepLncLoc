@@ -1,12 +1,7 @@
 # DeepLncLoc
 A deep learning-based lncRNA subcellular localization predictor
 
-# Requirements
-sklearn
 
-gensim
-
-numpy
 
 # Usage
 ## How to train the model
