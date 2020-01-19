@@ -52,7 +52,7 @@ res = model.predict("ATCG...")
 print(res)
 ```
 ## Independent test set
-The test_set.text in Independent_test_set folder is used in comparison with lncLocator and iLoc-lncRNA. The final prediction results can be seen the supplementary materials of the paper.
+The test_set.text in Independent_test_set folder is used in comparison with lncLocator and iLoc-lncRNA. The final prediction results of three predictors (DeepLncLoc, lncLocator, iLoc-lncRNA) can be seen the supplementary materials of the paper.
 
 ## Other details
 The other details can see the paper and the codes.
