@@ -53,7 +53,7 @@ The test_set.text in Independent_test_set folder is used in comparison with lncL
 The other details can see the paper and the codes.
 
 # Citation
-Min Zeng, Yifan Wu, Fuhao Zhang, Chengqian Lu, Fang-Xiang Wu, Jianxin Wang, Min Li. DeepLncLoc: predicting the subcellular localization of long non-coding RNAs by using deep learning techniques based on subsequence embedding
+Min Zeng, Yifan Wu, Fuhao Zhang, Chengqian Lu, Fang-Xiang Wu, Jianxin Wang, Min Li. DeepLncLoc: predict the subcellular localization of long non-coding RNAs by using deep learning techniques based on subsequence embedding
 
 # License
 This project is licensed under the MIT License - see the LICENSE.txt file for details
