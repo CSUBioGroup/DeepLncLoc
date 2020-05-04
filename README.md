@@ -32,7 +32,7 @@ model = TextClassifier_SPPCNN(classNum=5, embedding=dataClass.vector['embedding'
 model.cv_train(dataClass, trainSize=1, batchSize=16, stopRounds=200, earlyStop=10, epoch=100, kFold=5, savePath=f"out/DeepLncLoc_s{s}_f{f}_k{k}_d{d}", report=['ACC','MaF','MiAUC','MaAUC'])
 ```
 
-==Note that the model need to be named as "..._sx_fx_kx_dx" ('x' represents the parameters' value) , therefore we can get the model parameters from the name toto better initialize the model architecture while in prediction.==
+==Note that the model need to be named as "..._sx_fx_kx_dx" ('x' represents the parameters' value) , therefore we can get the model parameters from the name to better initialize the model architecture while in prediction.==
 
 ## How to do prediction
 First, import the package. 
