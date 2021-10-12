@@ -90,7 +90,7 @@ class DataClass:
             return
         if method == 'char2vec':
             doc = [i+['<EOS>'] for i in self.RNADoc]
-            model = Word2Vec(doc, min_count=0, window=window, size=feaSize, workers=workers, sg=sg, iter=10)
+            model = Word2Vec(doc, min_count=0, window=window, vector_size=feaSize, workers=workers, sg=sg, epochs=10)
             char2vec = np.zeros((self.kmersNum, feaSize), dtype=np.float32)
             for i in range(self.kmersNum):
                 char2vec[i] = model.wv[self.id2kmers[i]]
