@@ -9,7 +9,7 @@ class TextSPP(nn.Module):
         self.name = name
         self.spp = nn.AdaptiveAvgPool1d(size)
     def forward(self, x):
-        return self.spp(x)
+        return self.spp(x.cpu()).to(x.device)
 
 class TextSPP2(nn.Module):
     def __init__(self, size=128, name='textSpp2'):
